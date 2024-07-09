@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var information = {
+            id: "",
+            name: "",
+            phone: "",
+            address: "",
+
+            input: function(){
+                this.id= prompt("nhập id vào đây");
+                this.name= prompt("nhập tên vào đây");
+                this.phone= prompt("nhập sdt vào đây");
+                this.address= prompt("nhập dc vào đây");
+            },
+
+            show: function(){
+                document.write(`id là ${this.id}<br>`);
+                document.write(`tên là ${this.name}<br>`);
+                document.write(`sdt là ${this.phone}<br>`);
+                document.write(`dc là ${this.address}<br>`);
+            }
+
+        }
+
+        information.input();
+        information.show();
+    </script>
+</body>
+</html>
