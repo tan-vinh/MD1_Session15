@@ -21,9 +21,14 @@
             var Student = new student(id,name);
             class1.push(Student);
         }
-            
 
-        console.log(class1);
+        console.log(class1);     
+        
+        var _html = "";
+        for (const st of class1) {
+            _html += `<li>${st.name}</li>`
+        }
+        document.write(`<ul>${_html}</ul>`)
     </script>
 </body>
 </html>
